@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" style="padding: 5%">
+  <head>
+    <title>HBOT unit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body class="center">
+    <h1 id="greeting">Lekhwiya <br>HBOT Unit</h1>
+    <form id="myForm1"> 
+      <input class="myCenter" name="PtName" type="text" maxlength="100" placeholder="Patient name" required>
+      <br>  
+      <input class="myCenter" name="PtID" type="number" maxlength="100" placeholder="QID" required>
+      <br>  
+      <input class="myCenter" name="PtAge" type="number" maxlength="100" placeholder="Age" required>
+      <br>   
+      <input class="myCenter" name="PtNationality" type="text" maxlength="100" placeholder="Nationality" required>
+      <br>  
+      <input class="myCenter" name="PtTel" type="number" maxlength="100" placeholder="Mobile" required>
+      <br> 
+      <input style="margin-left: 15%;" type="radio" name="Gender" value="Male" checked> Male
+      <input type="radio" name="Gender" value="female"> Female<br> 
+      <input style="margin-left: 15%;" type="radio" name="QNationality" value="Qatari" checked> Qatari
+      <input type="radio" name="QNationality" value="NonQatari"> Non-Qatari<br> 
+        <input style="margin-left: 15%;" type="radio" name="Military" value="NonMilitary" checked onchange="milNumHide()"> Non-Military
+        <input type="radio" name="Military" value="Military"  onchange = "milNumShow()"> Military 
+        <input class="myCenter" name="PtMilitarNumber" id="PMN" type="number" maxlength="100" placeholder="Military number" aria-labelledby="submit-dream" style="visibility: hidden;">
+        <br>
+      <button style="margin-left: 30%; width: 40%; height: 50px; text-align: center; font-weight: bolder; font-size:99%" type="submit" id="submit-dream">Submit</button>
+      </form>
+
+    <p id="Report">
+    </p>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
